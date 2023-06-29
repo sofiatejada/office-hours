@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Practice</title>
+</head>
+
+<body>
+
+  <h2>Contact Form</h2>
+  <form target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" autocomplete="off" autofocus required/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" autocomplete="off" name="email" placeholder="email here!" required/>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required/>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"/>
+
+    <label for="favorite-number">Favorite Number:</label>
+    <input type="number" id="favorite-number" name="favorite-number"/>
+
+
+
+    <h4>Sign Up?</h4>
+    <label for="signup-yes">Yes</label>
+    <input type="radio" id="signup-yes" name="signup" value="yes"/>
+    <label for="signup-no">No</label>
+    <input type="radio" id="signup-no" name="signup" value="no"/>
+
+    <h4>News Letter?</h4>
+    <input type="checkbox" id="maybe" name="maybe-news" value="maybe"/>
+    <label for="maybe-news">I might like a newsletter.</label>
+    <input type="checkbox" id="yes-news" name="yes-news" value="yes"/>
+    <label for="yes-news">I definitely want a newsletter!</label>
+    <input type="checkbox" id="no-news" name="no-news" value="no"/>
+    <label for="no-news">Please do not spam my email account!</label>
+
+    <h4>Dropdown Selection</h4>
+    <label for="languages">Choose a language:</label>
+    <select id="languages" name="languages">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javascript">Javascript</option>
+      <option value="web apis">Web APIs</option>
+    </select>
+
+    <h4>Any other questions</h4>
+    <textarea id="textarea" name="message" rows="10" cols="30" placeholder="Please type your other questions here!"></textarea>
+
+    <h4>Data list Pre-fill</h4>
+    <input list="colors" name="colors"/>
+    <datalist id="colors">
+      <option value="Blue">Blue</option>
+      <option value="Black">Black</option>
+      <option value="Green">Green</option>
+      <option value="Orange">Orange</option>
+      <option value="Grey">Grey</option>
+    </datalist>
+    
+
+    <h4>Select a color</h4>
+    <label for="favorite-color">Select your favorite color</label>
+    <br>
+    <input type="color" id="favorite-color" name="favorite-color"/>
+
+    <input type="submit" value="Submit" id="submit"/>
+  </form>
+  
+  <main>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ducimus doloribus in tempore dignissimos, sunt vel quo eveniet saepe a porro. Esse repellat reiciendis eius obcaecati ullam tempora, ratione dolore?</p>
+  </main>
+
+  <script src="./forms.js"></script>
+
+</body>
+
+</html>
